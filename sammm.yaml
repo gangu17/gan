@@ -1,0 +1,30 @@
+#TO CREATE LAMBDA AS CLOUDFORMATION CODE
+
+
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Resources:
+ MylambdaFunctionone:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: gang1
+      Timeout: 900
+      MemorySize: 3008
+      Handler: index.handler
+      Runtime: nodejs8.10
+      CodeUri: ./index.zip
+      Policies: AWSLambdaFullAccess
+      Role: arn:aws:iam::641553134660:role/service-role/demo1
+
+ MylambdaFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: gang2
+      Timeout: 900
+      MemorySize: 3008
+      Handler: index.handler
+      Runtime: nodejs8.10
+      CodeUri: ./index.zip
+      Policies: AWSLambdaFullAccess
+      Role: arn:aws:iam::641553134660:role/service-role/demo1
+
