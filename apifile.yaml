@@ -100,7 +100,7 @@ securityDefinitions:
     in: "header"
     x-amazon-apigateway-authtype: "custom"
     x-amazon-apigateway-authorizer:
-      authorizerUri: "arn:aws:apigateway:ap-south-1:lambda:path/2015-03-31/functions/arn:aws:lambda:ap-south-1:120107595195:function:Deliforce_roles_permission/invocations"
+      authorizerUri: "arn:aws:lambda:ap-south-1:641553134660:function:Deliforce_Analytics_driverLog_get"
       authorizerResultTtlInSeconds: 1
       identitySource: "method.request.header.Authorization"
       type: "request"
