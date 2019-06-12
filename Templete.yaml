@@ -49,7 +49,7 @@ Resources:
  DeliforceanalyticdriverloggetMethodfour:
     Type: AWS::Serverless::Function
     Properties:
-      FunctionName: nnnd
+      FunctionName: nnnnd
       Timeout: 900
       MemorySize: 3008
       Handler: index.handler
