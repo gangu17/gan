@@ -12,7 +12,7 @@ Resources:
    Type: 'AWS::Serverless::Api'
    Properties:
      StageName: Developement
-     DefinitionUri: ./index.zip
+     DefinitionUri: ./apifile.zip
  DeliforceanalyticdriverloggetMethod:
     Type: AWS::Serverless::Function
     Properties:
@@ -23,4 +23,4 @@ Resources:
       Runtime: nodejs8.10
       CodeUri: ./index.zip
       Policies: AWSLambdaFullAccess
-      Role: arn:aws:iam::120107595195:role/favas-poc
+      Role: aarn:aws:iam::641553134660:role/service-role/codebuild-ggggg-service-role
