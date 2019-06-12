@@ -1,0 +1,26 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: 'Deliforce web Backend'
+Globals:
+ Function:
+   Environment:
+     Variables:
+       bucketName: llmbdaconstant
+       constantFileName: constant.json
+Resources:
+ ApiGateway:
+   Type: 'AWS::Serverless::Api'
+   Properties:
+     StageName: Developement
+     DefinitionUri: ./apifile.yaml
+ DeliforceanalyticdriverloggetMethod:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: Deliforce_Analytics_driverLog_get
+      Timeout: 900
+      MemorySize: 3008
+      Handler: index.handler
+      Runtime: nodejs8.10
+      CodeUri: ./index.zip
+      Policies: AWSLambdaFullAccess
+      Role: arn:aws:iam::120107595195:role/favas-poc
