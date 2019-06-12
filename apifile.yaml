@@ -5,7 +5,7 @@ info:
 schemes:
 - "https"
 paths:
-  /analytics1:
+  /analytics:
     options:
       consumes:
       - "application/json"
@@ -35,7 +35,7 @@ paths:
           application/json: "{\"statusCode\": 200}"
         passthroughBehavior: "when_no_match"
         type: "mock"
-  /analytics1/driverlog1:
+  /analytics/driverlog:
     get:
       produces:
       - "application/json"
