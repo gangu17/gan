@@ -12,7 +12,7 @@ Resources:
    Type: 'AWS::Serverless::Api'
    Properties:
      StageName: Developement
-     DefinitionUri: ./apifile.yaml
+     DefinitionUri: ./index.zip
  DeliforceanalyticdriverloggetMethod:
     Type: AWS::Serverless::Function
     Properties:
