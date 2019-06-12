@@ -23,4 +23,4 @@ Resources:
       Runtime: nodejs8.10
       CodeUri: ./index.zip
       Policies: AWSLambdaFullAccess
-      Role: arn:aws:iam::641553134660:role/service-role/codebuild-ggggg-service-role
+      Role: arn:aws:iam::641553134660:role/service-role/demo1
