@@ -8,11 +8,6 @@ Globals:
        bucketName: llmbdaconstant
        constantFileName: constant.json
 Resources:
- ApiGateway:
-   Type: 'AWS::Serverless::Api'
-   Properties:
-     StageName: Developement
-     DefinitionUri: ./apifile.yaml
  DeliforceanalyticdriverloggetMethodone:
     Type: AWS::Serverless::Function
     Properties:
