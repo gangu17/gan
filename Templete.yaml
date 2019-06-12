@@ -13,10 +13,54 @@ Resources:
    Properties:
      StageName: Developement
      DefinitionUri: ./apifile.yaml
- DeliforceanalyticdriverloggetMethod:
+ DeliforceanalyticdriverloggetMethodone:
     Type: AWS::Serverless::Function
     Properties:
-      FunctionName: Deliforce_Analytics_driverLog_get
+      FunctionName: nnnna
+      Timeout: 900
+      MemorySize: 3008
+      Handler: index.handler
+      Runtime: nodejs8.10
+      CodeUri: ./index1.zip
+      Policies: AWSLambdaFullAccess
+      Role: arn:aws:iam::641553134660:role/service-role/demo1
+ DeliforceanalyticdriverloggetMethodtwo:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: nnnnb
+      Timeout: 900
+      MemorySize: 3008
+      Handler: index.handler
+      Runtime: nodejs8.10
+      CodeUri: ./index1.zip
+      Policies: AWSLambdaFullAccess
+      Role: arn:aws:iam::641553134660:role/service-role/demo1
+ DeliforceanalyticdriverloggetMethodthree:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: nnnc
+      Timeout: 900
+      MemorySize: 3008
+      Handler: index.handler
+      Runtime: nodejs8.10
+      CodeUri: ./index1.zip
+      Policies: AWSLambdaFullAccess
+      Role: arn:aws:iam::641553134660:role/service-role/demo1
+ DeliforceanalyticdriverloggetMethodfour:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: nnnd
+      Timeout: 900
+      MemorySize: 3008
+      Handler: index.handler
+      Runtime: nodejs8.10
+      CodeUri: ./index1.zip
+      Policies: AWSLambdaFullAccess
+      Role: arn:aws:iam::641553134660:role/service-role/demo1
+ DeliforceanalyticdriverloggetMethodfive:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: nnne
       Timeout: 900
       MemorySize: 3008
       Handler: index.handler
