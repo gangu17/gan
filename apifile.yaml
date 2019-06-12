@@ -45,10 +45,10 @@ paths:
           schema:
             $ref: "#/definitions/Empty"
       x-amazon-apigateway-integration:
-        uri: "arn:aws:apigateway:ap-south-1:lambda:path/2015-03-31/functions/arn:aws:lambda:ap-south-1:641553134660:function:nnna/invocations"
+        uri: "arn:aws:apigateway:ap-south-1:lambda:path/2015-03-31/functions/arn:aws:lambda:ap-south-1:641553134660:function:Deliforce_Analytics_driverLog_get/invocations"
         responses:
           default:
-            statusCode: "200"	
+            statusCode: "200"
         passthroughBehavior: "when_no_match"
         httpMethod: "POST"
         contentHandling: "CONVERT_TO_TEXT"
@@ -107,3 +107,4 @@ x-amazon-apigateway-gateway-responses:
       application/json: "{\"message\":$context.error.messageString}"
 x-amazon-apigateway-binary-media-types:
 - "multipart/form-data"
+
